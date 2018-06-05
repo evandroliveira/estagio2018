@@ -41,7 +41,7 @@ require 'classes/conexao.php';
             <label class="col-form-label">Data</label>
             <input type="text" id="calendario" class="form-control" name="dia" placeholder="Código de Barras">
         </div>
-        
+
     </form>
 </div>
 </div>
