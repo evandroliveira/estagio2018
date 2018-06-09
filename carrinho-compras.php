@@ -4,6 +4,12 @@ require 'assets/pages/menu.php';
 require 'classes/banco.php';
 require 'classes/conexao.php';
 
+
+$banco = new Banco;
+$banco->query("SELECT * FROM fornecedor");
+
+print_r($banco->result());
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,16 +23,11 @@ require 'classes/conexao.php';
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script>
-        $(function() {
-            $( "#calendario" ).datepicker({
-                showButtonPanel:true
-            });
-        });
-    </script>
+
 </head>
 <body>
 <div class="container">
+    <div
     <h1>Compras</h1>
     <form method="POST">
         <div class="col-md-4">
@@ -39,7 +40,7 @@ require 'classes/conexao.php';
         </div>
         <div class="col-md-4">
             <label class="col-form-label">Data</label>
-            <input type="text" id="calendario" class="form-control" name="dia" placeholder="Código de Barras">
+            <input type="date" id="calendario" class="form-control" name="dia" placeholder="Código de Barras">
         </div>
 
     </form>
