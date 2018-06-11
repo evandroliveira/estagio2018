@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5024a544-31f2-47ae-b846-cead3e288253" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfasd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testando.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ad_cidade.php" beforeDir="false" afterPath="$PROJECT_DIR$/ad_cidade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carrinho-compras.php" beforeDir="false" afterPath="$PROJECT_DIR$/carrinho-compras.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/carrinho.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/carrinho.class.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,36 +19,20 @@
       <file leaf-file-name="carrinho-compras.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/carrinho-compras.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            <state relative-caret-position="377">
+              <caret line="130" column="62" selection-start-line="130" selection-start-column="62" selection-end-line="130" selection-end-column="62" />
+              <folding>
+                <element signature="n#style#0;n#input#1;n#div#1;n#div#1;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="banco.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/banco.php">
+      <file leaf-file-name="carrinho.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/carrinho.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conexao.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/conexao.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="estoque.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/estoque.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="carrinho.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carrinho.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="163" column="6" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="6" />
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -75,7 +57,6 @@
         <option value="$PROJECT_DIR$/classes/produto.class.php" />
         <option value="$PROJECT_DIR$/estado.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/classes/carrinho.class.php" />
         <option value="$PROJECT_DIR$/remover.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/assets/pages/menu.php" />
@@ -89,6 +70,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/testando.html" />
+        <option value="$PROJECT_DIR$/ad_cidade.php" />
+        <option value="$PROJECT_DIR$/classes/carrinho.class.php" />
         <option value="$PROJECT_DIR$/carrinho-compras.php" />
       </list>
     </option>
@@ -108,8 +91,7 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="292" />
-    <option name="y" value="88" />
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -129,6 +111,17 @@
             <path>
               <item name="estagio2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="estagio2018" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="estagio2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="estagio2018" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="estagio2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="estagio2018" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -140,7 +133,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel_estagio/laravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -194,17 +187,19 @@
       <workItem from="1528329717748" duration="387000" />
       <workItem from="1528359382383" duration="1728000" />
       <workItem from="1528414194716" duration="1739000" />
+      <workItem from="1528579292885" duration="31000" />
+      <workItem from="1528725456011" duration="6319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51066000" />
+    <option name="totallyTimeSpent" value="57416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20644216" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17130308" />
       <window_info anchor="bottom" id="TODO" order="14" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="18" side_tool="true" />
@@ -237,13 +232,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/carrinho-compras.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/venda.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -376,13 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ad_cidade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/compra.class.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -393,22 +374,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/carrinho.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/pages/menu.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -498,30 +465,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/estoque.php">
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/fornecedor.class.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/carrinho.php">
+    <entry file="file://$PROJECT_DIR$/classes/banco.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="163" column="6" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="6" />
+        <state relative-caret-position="17">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/conexao.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/banco.php">
+    <entry file="file://$PROJECT_DIR$/estoque.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carrinho.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="547">
+          <caret line="163" column="6" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ad_cidade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="66" column="78" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/carrinho.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/carrinho-compras.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        <state relative-caret-position="377">
+          <caret line="130" column="62" selection-start-line="130" selection-start-column="62" selection-end-line="130" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#input#1;n#div#1;n#div#1;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -43,8 +43,8 @@ require 'classes/conexao.php';
 	<link rel="stylesheet" type="text/css" href="assets/css/tamplate.css">
 	<link rel="shortcut icon" type="image/png" href="assets/img/folha.png">
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="asstes/js/form.js"></script>
 </head>
 <div class="container">
