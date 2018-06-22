@@ -3,6 +3,8 @@ require 'config.php';
 require 'assets/pages/menu.php';
 require 'classes/banco.php';
 require 'classes/conexao.php';
+session_start();
+
 /*require 'classes/carrinho.class.php';
 
 
@@ -28,7 +30,7 @@ if(isset($_POST['fornecedor_id']) && !empty($_POST['fornecedor_id'])) {
         } else {
             ?>
             <div class="alert alert-warning">
-                Esta Compra j· existe!
+                Esta Compra j√° existe!
             </div>
             <?php
         }
@@ -57,10 +59,16 @@ if(isset($_POST['fornecedor_id']) && !empty($_POST['fornecedor_id'])) {
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
 
 </head>
 <body>
 <div class="container">
+    <a href="carrinho.php" class="btn btn-default btn-ms">Carrinho</a>
     <form method="POST" class="form-horizontal" name="frmCadastro" id="frmCadastro" action="carrinho-compras.php">
         <fieldset>
             <div class="panel panel-primary">
@@ -68,18 +76,12 @@ if(isset($_POST['fornecedor_id']) && !empty($_POST['fornecedor_id'])) {
                     <div class="panel-body">
                         <div class="form-group">
                             <div class="col-md-11 control-label">
-                                <p class="help-block"><h11>*</h11> Campo ObrigatÛrio </p>
+                                <p class="help-block"><h11>*</h11> Campo Obrigat√≥rio </p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <form class="form-horizontal" name="frmCadastro" id="frmCadastro" action="<?php echo $_SERVER['PHP_SELF'] ?>?a=buscar">
-                                <label class="col-form-label" >CÛdigo do Produto<h11> *</h11></label>
-                                <input type="text" id="codigo" class="form-control" name="cod_produto" placeholder="CÛdigo de Barras">
-                                <input type="submit"  value="Buscar" class="btn btn-secondary btn-ms" style="margin-top: 3px;" />
-                            </form>
-                        </div>
+
                         <div class="form-group">
-                            <div class="col-md-5">
+                            <div class="col-md-3">
                                 <label class="col-form-label">Fornecedor <h11> *</h11></label>
                                 <select name="fornecedor_id" id="fornecedor_id" class="form-control">
                                     <?php
@@ -94,7 +96,7 @@ if(isset($_POST['fornecedor_id']) && !empty($_POST['fornecedor_id'])) {
                                     } else {
                                         ?>
                                         <script type="text/javascript">
-                                            alert("N„o houve resultados");
+                                            alert("N√£o houve resultados");
                                         </script>
                                         <?php
                                     }
@@ -104,7 +106,7 @@ if(isset($_POST['fornecedor_id']) && !empty($_POST['fornecedor_id'])) {
                         </div>
                             <div class="col-md-4">
                                 <label class="col-form-label">Data<h11> *</h11></label>
-                                <input type="date" id="calendario" class="form-control" name="dia" placeholder="CÛdigo de Barras">
+                                <input type="date" id="calendario" class="form-control" name="dia" placeholder="C√≥digo de Barras">
                             </div>
                         <div class="col-md-4">
                             <label class="col-form-label">Valor Total</label>
@@ -115,7 +117,7 @@ if(isset($_POST['fornecedor_id']) && !empty($_POST['fornecedor_id'])) {
                             <input type="number" id="desconto" class="form-control" name="desconto" placeholder="Desconto">
                         </div>
                         <div class="col-md-3">
-                            <label class="col-form-label">valor LÌquido</label>
+                            <label class="col-form-label">valor L√≠quido</label>
                             <input type="number" id="valor_liquido" class="form-control" name="valor_liquido" ">
                         </div>
                         <div class="col-md-3">
@@ -130,7 +132,7 @@ if(isset($_POST['fornecedor_id']) && !empty($_POST['fornecedor_id'])) {
                      </div>
                 <div class="form-group" style="margin-left: 13px;">
                     <div class="col-lg-1">
-                        <input type="submit" value="Comprar" class="btn btn-primary btn-lg">
+                        <input type="submit" value="Comprar" class="btn btn-primary btn-ms">
                     </div>
                 </div>
             </div>

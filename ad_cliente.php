@@ -20,7 +20,7 @@ $u = new Cliente();
 		$cidade_id = $_POST['cidade_id'];
 
 		if(!empty($nome) && !empty($cpf) && !empty($rg) && !empty($endereco) && !empty($numero) && !empty($bairro) && !empty($telefone) && !empty($celular) && !empty($email) && !empty($status) && !empty($cidade_id)) {
-			if($u->cadastrarcl($nome, $cpf, $rg, $endereco, $numero,$bairro,$telefone, $celular, $email, $status, $cidade_id)) {
+			if($u->cadastrarcl($nome, $cpf, $rg, $endereco, $numero, $bairro, $telefone, $celular, $email, $status, $cidade_id)) {
 				?>
 				
 				<div class="alert alert-success">
@@ -29,6 +29,7 @@ $u = new Cliente();
 				
 				
 				<?php
+
 			} else {
 				?>
 				<div class="alert alert-warning">
@@ -98,7 +99,7 @@ $u = new Cliente();
 							<div  class="form-group">
 							  <label class="col-md-2 control-label" for="cpf">CPF <h11>*</h11></label>  
 							  <div class="col-md-3">						  	
-							  <input type="text" id="cpf" name="cpf" onBlur="ValidarCPF(form1.cpf);" required 	onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
+							  <input type="text" id="cpf" name="cpf" class="form-control input-md" onBlur="ValidarCPF(form1.cpf);" required 	onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
 							  </div>
 							  
 							  <label class="col-md-2 control-label" for="Nome">RG <h11>*</h11></label>
@@ -112,7 +113,7 @@ $u = new Cliente();
 							<!-- Prepended text-->
 							<div class="form-group">
 							  <label class="col-md-2 control-label" for="telefone">Telefone <h11>*</h11></label>
-							  <div class="col-md-2">
+							  <div class="col-md-3">
 							    <div class="input-group">
 							      <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
 							      <input type="text" id="telefone" name="telefone" class="form-control" placeholder="XX XXXXX-XXXX" required onKeyPress="MascaraTelefone(form1.telefone);" maxlength="14"  onBlur="ValidaTelefone(form1.telefone);">

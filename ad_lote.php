@@ -4,38 +4,21 @@ require 'classes/lote.class.php';
 require 'classes/banco.php';
 require 'classes/conexao.php';
 require 'assets/pages/menu.php';
-	$u = new lote();
-	if(isset($_POST['numero_lote']) && !empty($_POST['numero_lote'])) {
-		$numero_lote = addslashes($_POST['numero_lote']);
-		$validade_lote = addslashes($_POST['validade_lote']);
-		$quantidade = addslashes($_POST['quantidade']);
-
-		if(!empty($numero_lote) && !empty($validade_lote) && !empty($quantidade)) {
-			if($u->cadastrarl($numero_lote, $validade_lote, $quantidade)) {
-				?>
-				
-				<div class="alert alert-success">
-					Lote Cadastrado com sucesso! 
-				</div>
-				
-				
-				<?php
-			} else {
-				?>
-				<div class="alert alert-warning">
-					Est Lote já existe! 
-				</div>
-				<?php
-			}
-		} else {
-			?>
-			<div class="alert alert-warning">
-				Preencha todos os campos!
-			</div>
-			<?php
-		}
-
-	}
+if(isset($_POST['nome']) && !empty($_POST['nome'])) {
+    $banco->insert("produto", array(
+        "nome" => $_POST['nome'],
+        "cod_produto" => $_POST['cod_produto'],
+        "preco_custo" => $_POST['preco_custo'],
+        "preco_venda" => $_POST['preco_venda'],
+        "quantidade"  => $_POST['quantidade'],
+        "status" => $_POST['status']
+    ));
+    ?>
+    <script>
+        alert("Produto cadastrado com sucesso!");
+    </script>
+    <?php
+}
 ?>
 <head>
 	<meta charset="utf-8">

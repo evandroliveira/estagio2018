@@ -12,6 +12,11 @@ require 'classes/conexao.php';
 			"quantidade"  => $_POST['quantidade'],
 			"status" => $_POST['status']
 		));
+		?>
+            <script>
+                alert("Produto cadastrado com sucesso!");
+            </script>
+        <?php
 	}
 
 	?>

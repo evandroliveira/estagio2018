@@ -22,7 +22,7 @@ require 'assets/pages/menu.php';
         <tr>
             <th>Produto</th>
             <th>Quantidade</th>
-            <th>Preço de Venda</th>
+            <!--<th>Preço de Venda</th>-->
         </tr>
     </thead>
 <?php
@@ -35,7 +35,7 @@ require 'assets/pages/menu.php';
 		echo '<tr class="success">';
 		echo '<td>'.$produto['nome'].'</td>';
 		echo '<td>'.$produto['quantidade'].'</td>';
-		echo '<td>'.number_format($produto['preco_venda'],2,",",".").'</td>';
+		//echo '<td>'.number_format($produto['preco_venda'],2,",",".").'</td>';
 
 	}
 ?>

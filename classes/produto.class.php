@@ -1,25 +1,39 @@
 <?php
-  /*
-   * classe produto
-   * active record para tabela produto
-   */
+class Produto {
 
-  class Produto extends TRecord {
-      const TABLENAME = 'produto';
-      private $fabricante;
+    public function getTotalProduto() {
+        global $pdo;
 
-      /*
-       * metodo get_nome_fabricante()
-       * retorna o nome do fabricante do produto
-       */
-      function get_nome_fabricante() {
-          //instancia Fabricante, carrega
-          //na memoria a a fabricante de codigo $this->id_fabricante
-          if (empty($fabricante))
-              $this->fabricante = new Fabricante($this->id_fabricante);
-          //retorna o nome do fabricante
-          return $this->fabricante->nome;
-      }
-  }
+        $sql = $pdo->query("SELECT COUNT(*) as p FROM produto");
+        $row = $sql->fetch();
 
+        return $row['p'];
+    }
+
+    public function cadastrarp($nome, $cod_produto, $preco_custo, $preco_venda, $quantidade, $status) {
+        global $pdo;
+        $sql = $pdo->prepare("SELECT id FROM produto WHERE nome = :nome");
+        $sql->bindValue(":nome", $nome);
+        $sql->execute();
+
+        if($sql->rowCount() == 0) {
+
+            $sql = $pdo->prepare("INSERT INTO produto SET nome  = :nome, cod_produto = :cod_produto, preco_custo = :preco_custo, preco_venda = :preco_venda, quantidade = :quantidade, status = :status");
+            $sql->bindValue(":nome", $nome);
+            $sql->bindValue(":cod_produto", $cod_produto);
+            $sql->bindValue(":preco_custo, $preco_custo");
+            $sql->bindValue("preco_venda", $preco_venda);
+            $sql->bindValeu("quantidade", $quantidade);
+            $sql->bindValue(":status", $status);
+            $sql->execute();
+
+            return true;
+
+        } else {
+            return false;
+        }
+
+    }
+
+}
 ?>

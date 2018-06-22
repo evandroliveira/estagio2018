@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php';
+require_once 'config.php';
 
 $_SESSION['lg'] = '';
 
@@ -19,7 +19,7 @@ if(isset($_POST['email']) && !empty($_POST['email'])) {
 		$id = $sql['id'];
 		$ip = $_SERVER['REMOTE_ADDR'];
 
-		$_SESSION['lg'] = $id;
+		$_SESSION['lg'] = $email;
 
 		$sql = "UPDATE usuarios SET ip = :ip WHERE id = :id";
 		$sql = $pdo->prepare($sql);
